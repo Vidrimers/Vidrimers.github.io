@@ -18,7 +18,7 @@ header {
 }
 
 #first {
-  height: 800px;
+  height: 600px;
   background: url(/img/head_img.png) no-repeat center top / cover;
   color: white;
 }
@@ -57,7 +57,7 @@ h1 {
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 200px;
   display: block;
 }
 
