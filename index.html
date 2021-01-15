@@ -5,50 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Yaroslav Shiryakov</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset_css_lite.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/section.css" />
   </head>
   <body>
-    <h1 class="title">Ширяков Ярослав</h1>
-    <h2>Верстальщик</h2>
-    <p>31 год</p>
-    <img class="userpic" src="/img/photo_2.jpg" alt="photo" width="200px" />
-    <p>КОНТАКТЫ (ЗНАЧКИ: ВК, HH, LINKEDIN, INSTA, FLRU, FREELANCE, GITHUB )</p>
-    <p>г. Обнинск калужская обл.</p>
-    <h2>Портфолио</h2>
-    <hr />
-    ССЫЛКИ на работы
-    <h2>Навыки</h2>
-    <hr />
-    <p>HTML/CSS/JavaScript</p>
-    <h2>Образование</h2>
-    <hr />
-    <p>СОШ №16</p>
-    <p>Лицей "Технический"</p>
-    <h2>О себе</h2>
-    <hr />
-    <p>О СЕБЕ НАПИСАТь</p>
-    <h2>Курсы</h2>
-    <hr />
-    <p>
-      2020 - [Udemy] [Михаил Непомнящий] Компетенция Верстальщик (2020) - HTML,
-      CSS, JavaScript
-    </p>
-    <p>2019 - [Sololearn] HTML/CSS/JavaScript</p>
-    <p>2019 - [WebDesign Master] Джедай верстки</p>
-    <p>2019 - [Дмитрий Лаврик] Продвинутая вёрстка по сетке smartgrid</p>
-    <p>2019 - [ДмитрийЛаврик] JavaScript Интенсивный курс для верстальщиков</p>
-    <p>2019 - [Loftschool] Веб-разработка для начинающих</p>
-    <p>Еще добавить остальное</p>
-    <h2>Сертификаты</h2>
-    <hr />
-    <a target="_blank" href="/img/Sololearn.jpg">
-      <img src="/img/Sololearn.jpg" alt="" width="250px" />
-      <img src="/img/Sololearn.jpg" alt="" width="250px" />
-      <img src="/img/Sololearn.jpg" alt="" width="250px" />
-      <img src="/img/Sololearn.jpg" alt="" width="250px" />
-      <img src="/img/Sololearn.jpg" alt="" width="250px" />
-      <img src="/img/Sololearn.jpg" alt="" width="250px" />
-      <img src="/img/Sololearn.jpg" alt="" width="250px" />
-    </a>
+    <!-- ОБЕРТКА НАЧАЛО -->
+    <div class="wrapper">
+      <h1 class="profession">Frontend-разработчик</h1>
+      <!-- секция title  -->
+      <section class="title">
+        <!-- блок фото -->
+        <div class="title__left-block p-1 title-card">
+          <img class="title__photo" src="img/photo.jpg" alt="" />
+        </div>
+        <!-- блок фото -->
+        <!-- блок с характеристиками -->
+        <div class="title__desc p-1 title-card">
+          <p class="title__name txt desc-txt">Ширяков Ярослав</p>
+          <p class="title__age txt desc-txt">31 год</p>
+          <p class="title__desc-city txt">г. Обнинск калужская обл.</p>
+          <br /><br />
+          <!-- блок контактов -->
+          <div class="title__contacts-block">
+            <a
+              class="title__link"
+              target="_blank"
+              href="https://www.facebook.com/jarosik"
+              ><img class="title__ico ico" src="" alt=""
+            /></a>
+            <a class="title__link" target="_blank" href="#"
+              ><img class="title__ico ico" src="img/ico/fb.png" alt=""
+            /></a>
+            <a class="title__link" target="_blank" href="#"
+              ><img class="title__ico ico" src="img/ico/linkedin.png" alt=""
+            /></a>
+            <a class="title__link" target="_blank" href="#"
+              ><img class="title__ico ico" src="img/ico/fl.png" alt=""
+            /></a>
+            <a
+              class="title__link"
+              target="_blank"
+              href="https://freelance.ru/vidrimers"
+              ><img class="title__ico ico" src="img/ico/freelance.png" alt=""
+            /></a>
+            <!-- <br /><br /> -->
+            <a class="title__link" target="_blank" href="#"
+              ><img class="title__ico ico" src="img/ico/hh.svg" alt=""
+            /></a>
+            <a
+              class="title__link"
+              target="_blank"
+              href="html/old.html"
+              ><img class="title__ico ico" src="img/ico/github.png" alt=""
+            /></a>
+          </div>
+          <!-- блок контактов -->
+        </div>
+        <!-- блок с характеристиками -->
+      </section>
+      <!-- секция title -->
+      <!-- skills -->
+      <h2 class="skills-title card-name">Навыки</h2>
+      <section class="skills p-1 card">
+        <div class="skills__card">
+          <img class="skills__img" src="img/ico/skills/html.png" alt="HTML" />
+        </div>
+        <div class="skills__card">
+          <img class="skills__img" src="img/ico/skills/css.png" alt="CSS" />
+        </div>
+        <div class="skills__card">
+          <img class="skills__img" src="img/ico/skills/javascript.png" alt="JavaScript" />
+        </div>
+        <div class="skills__card">
+          <img class="skills__img" src="img/ico/skills/bem.svg" alt="BEM" />
+        </div>
+        <div class="skills__card"></div>
+        <div class="skills__card"></div>
+        <div class="skills__card"></div>
+        <div class="skills__card"></div>
+        <div class="skills__card"></div>
+        <!-- <img class="skills__img" src="img/ico/skills/bem.svg" alt="" /> -->
+      </section>
+      <!-- skills -->
+      <!-- Портфолио -->
+      <h2 class="card-name">Портфолио</h2>
+      <section class="portfolio p-1 card">
+        <a target="_blank" href="https://vidrimers.github.io/portfolio.darina-color/"><img class="thumbs-img" src="img/portf-thumb/darinacolor.jpg" alt="" /><a href=""></a>
+        <a target="_blank" href="https://vidrimers.github.io/portfolio.mcd/"><img class="thumbs-img" src="img/portf-thumb/mcd.jpg" alt="" /><a href=""></a>
+      </section>
+      <!-- Портфолио -->
+      <!-- Курсы -->
+      <h2 class="card-name">Курсы</h2>
+      <section class="courses p-1 card">
+        <p class="txt">
+          2020 - [Udemy] [Михаил Непомнящий] Компетенция Верстальщик
+        </p><br>
+        <p class="txt">2020 - [Sololearn] HTML/CSS/JavaScript</p><br>
+        <p class="txt">2020 - [GeekBrainss] Интенсив “Веб-разработка для начинающих”</p><br>
+        <p class="txt">2020 - [GeekBrainss] Интенсив "Начинаем программировать с JavaScript"</p><br>
+        <p class="txt">2020 - [GeekBrainss] Интенсив "Основы веб-дизайна"</p><br>
+        
+      </section>
+      <!-- Курсы -->
+      <!-- Сертификаты -->
+      <h2 class="card-name">Сертификаты</h2>
+      <section class="certificates p-1 card">
+        <a target="_blank" href="img/ico/cert/1.jpg"><img class="thumbs-img" src="img/ico/cert/thumb/1.jpg" alt="" /><a href=""></a>
+        <a target="_blank" href="img/ico/cert/2.jpg"><img class="thumbs-img" src="img/ico/cert/2.jpg" alt="" /><a href=""></a>
+        <a target="_blank" href="img/ico/cert/3.png"><img class="thumbs-img" src="img/ico/cert/3.png" alt="" /><a href=""></a>
+        <a target="_blank" href="img/ico/cert/4.png"><img class="thumbs-img" src="img/ico/cert/4.png" alt="" /><a href=""></a>
+        <a target="_blank" href="img/ico/cert/5.png"><img class="thumbs-img" src="img/ico/cert/5.png" alt="" /><a href=""></a>
+      </section>
+      <!-- Сертификаты -->
+    </div>
+    <!-- ОБЕРТКА КОНЕЦ -->
   </body>
 </html>
