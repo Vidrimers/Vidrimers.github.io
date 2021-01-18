@@ -32,5 +32,9 @@ npm-debug.log
 temp
 Temp
 !temp
+\!temp
+/!temp
 !Temp
+\!Temp
+/!Temp
 package-lock.json
