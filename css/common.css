@@ -9,10 +9,12 @@ body {
   padding: 1rem;
 }
 .title-card {
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   box-shadow: 0 0 0.6rem 0 #00000047;
   margin: 1rem;
-  /* width: 84.1rem; */
+  width: 26rem;
 }
 .card {
   display: flex;
@@ -20,7 +22,8 @@ body {
   background-color: #fff;
   box-shadow: 0 0 0.6rem 0 #00000047;
   margin: 1rem;
-  width: 84.1rem;
+  width: 100%;
+  max-width: 84.1rem;
 }
 .txt {
   font-size: 1.6rem;
@@ -28,18 +31,29 @@ body {
   font-weight: 600;
 }
 .ico {
-  width: 4rem;
+  width: 3rem;
   margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .card-name {
   font-size: 2.4rem;
   margin: 1.5rem 0.5rem 0;
 }
+.card-name::after {
+  content: "";
+  display: block;
+  /* margin-top: 10rem; */
+  width: 2rem;
+  background: #7a7a7a;
+  height: 0.2rem;
+  margin: 0.5rem auto 0;
+  /* top: 100%; */
+  /* left: 50%; */
+}
 .thumbs-img {
   width: 25rem;
-  /* height: 8rem; */
-  padding: 1rem 1rem 0 0;
+  padding: 0 1rem 0 0;
 }
 /* общие классы */
 .wrapper {
@@ -62,25 +76,55 @@ body {
 }
 .title__left-block {
   /* box-shadow: 0 0 0.6rem 0 #00000047; */
+  max-width: 40%;
 }
 .title__photo {
-  width: 20rem;
+  /* width: 20rem; */
+  width: 100%;
+  /* height: 30rem; */
 }
 .title__desc {
-  width: 60rem;
-  min-width: 20rem;
-  position: relative;
+  width: 50%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* width: 60rem; */
+  /* position: relative; */
 }
+
 .desc-txt {
   padding-bottom: 1.5rem;
 }
 .title__contacts-block {
-  /* display: flex; */
-  position: absolute;
-  bottom: 4rem;
-  left: 1rem;
+  display: flex;
+  /* position: absolute; */
+  /* bottom: 4rem; */
+  /* left: 1rem; */
+  /* top: 80%; */
   /* flex-direction: row; */
   /* align-items: flex-end; */
-  justify-content: center;
+  justify-content: space-evenly;
   /* align-content: end; */
+}
+.title__link {
+  position: relative;
+}
+.title__link::after {
+  content: "";
+  opacity: 0;
+  /* display: none; */
+  width: 92%;
+  height: 0.2rem;
+  background: #7a7a7a;
+  /* background: black; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: opacity 0.1s linear;
+}
+.title__link:hover:after {
+  opacity: 1;
+  /* display: block; */
 }
