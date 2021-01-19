@@ -38,3 +38,6 @@ Temp
 \!Temp
 /!Temp
 package-lock.json
+.gitattributes
+\.gitattributes
+/.gitattributes
