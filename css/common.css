@@ -52,7 +52,8 @@ body {
   /* left: 50%; */
 }
 .thumbs-img {
-  width: 25rem;
+  /* width: 100%; */
+  max-width: 40rem;
   padding: 0 1rem 0 0;
 }
 /* общие классы */
